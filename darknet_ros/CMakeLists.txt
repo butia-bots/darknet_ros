@@ -41,7 +41,7 @@ if (CUDA_FOUND)
     set(CUDA_SUCCESS "FALSE")
   endif()
   #Config CUDA
-  if (${CUDA_SUCCESS})
+  if (${CUDA_SUCCESS} OR ${FORCE_CUDA})
     message(STATUS "CUDA Architecture: ${GENCODE}")
     message(STATUS "CUDA Version: ${CUDA_VERSION_STRING}")
     message(STATUS "CUDA Version: ${CUDA_VERSION_STRINGS}")
